@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pratique d'appels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pratique des appels d'oiseaux</h1>
+    
+    <label for="animal">Choisis un animal :</label>
+    <select id="animal">
+      <option value="dindon">Dindon sauvage</option>
+      <option value="bernache">Bernache du Canada</option>
+      <option value="oie">Oie blanche</option>
+    </select>
+
+    <div id="reference">
+      <h2>Appel de référence</h2>
+      <button id="play-reference">Écouter</button>
+    </div>
+
+    <div id="recording">
+      <h2>Ton appel</h2>
+      <button id="start-record">Démarrer l'enregistrement</button>
+      <button id="stop-record" disabled>Arrêter</button>
+      <audio id="user-audio" controls></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
